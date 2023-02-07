@@ -1,4 +1,4 @@
-const content = '안녕하세요!+주민건 입니다 '
+const content = '안녕하세요+주민건 입니다 '
 const first_line = document.querySelector('.first_line');
 const second_line = document.querySelector('.second_line');
 let txt = first_line;
