@@ -1,10 +1,23 @@
+@import url('https://webfontworld.github.io/NanumSquareNeo/NanumSquareNeo.css');
+
 @keyframes cursor {
   to {
       border-color: transparent;
   }
 }
 
-.txt {
+html {
+  font-family: 'NanumSquareNeo';
+}
+
+.first_line, .second_line {
+  display: block;
+  font-weight: 800;
+  margin-bottom: 50px;
+  font-size: 17em;
+}
+
+.second_line {
   display: table-cell;
   vertical-align: middle;
   border-right: 0.05em solid #111111; 
