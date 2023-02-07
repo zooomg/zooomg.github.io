@@ -10,11 +10,25 @@ html {
   font-family: 'NanumSquareNeo';
 }
 
+.snap-section{
+  scroll-snap-align: start end;
+  -webkit-scroll-snap-align: start end;
+
+  min-height: var(--y-scrollHeight);
+}
+
+.pos-center {
+  top: calc(50% - 1.5rem);
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .first_line, .second_line {
   display: block;
   font-weight: 800;
   margin-bottom: 50px;
-  font-size: 17em;
+  /* font-size: 17em; */
+  font-size: clamp(2rem,2rem + 6vw,140px);
 }
 
 .second_line {
