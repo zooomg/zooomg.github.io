@@ -15,12 +15,6 @@ html {
   font-family: 'NanumSquareNeo';
 }
 
-header>nav {
-  position: fixed;
-  top: var(--y-margin);
-  right: var(--y-margin);
-}
-
 ul {
   display: block;
   list-style-type: none;
@@ -29,6 +23,16 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+}
+
+header>nav {
+  position: fixed;
+  top: var(--y-margin);
+  right: var(--y-margin);
+}
+
+header>nav ul {
+  text-align: right;
 }
 
 header>nav ul li a {
@@ -89,4 +93,14 @@ header>nav ul li:first-child a:visited, header>nav ul li:first-child a:link {
   vertical-align: middle;
   border-right: 0.05em solid #111111; 
   animation: cursor 1s ease infinite;
+}
+
+@media screen and (max-width: 600px) {
+  .paragraph {
+    writing-mode: vertical-lr;
+  }
+  .second_line {
+    border-right: none;
+    border-bottom: 0.05em solid #111111;
+  }
 }
