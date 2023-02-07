@@ -99,6 +99,9 @@ header>nav ul li:first-child a:visited, header>nav ul li:first-child a:link {
   .paragraph {
     writing-mode: vertical-lr;
   }
+  .first_line {
+    margin-right: 50px;
+  }
   .second_line {
     border-right: none;
     border-bottom: 0.05em solid #111111;
