@@ -100,7 +100,7 @@ header>nav ul li:first-child a:visited, header>nav ul li:first-child a:link {
     writing-mode: vertical-lr;
   }
   .first_line {
-    margin-right: 50px;
+    margin-right: 20px;
   }
   .second_line {
     border-right: none;
