@@ -3,36 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    @keyframes cursor {
-        to {
-            border-color: transparent;
-        }
-    }
-    
-    .txt {
-        display: table-cell;
-        vertical-align: middle;
-        border-right: 0.05em solid #F81857; 
-        animation: cursor 0.5s ease infinite;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <h1 class="txt"></h1>
-  <script>
-    const content = '안녕하세요! 주민건 입니다'
-    const txt = document.querySelector('.txt');
-    let n = 0;
-
-    const typing = function() {
-        txt.innerHTML += content[n++]; //.txt엘리먼트에 위에 content의 변수에 저장한 문자를 순차적으로 뿌리겠다.
-        if(n > content.length) { 
-            clearInterval(loop);
-        }
-    };
-
-    var loop = setInterval(typing, 100);
-  </script>
+  <script type="module" src="./index.js"></script>
 </body>
 </html>

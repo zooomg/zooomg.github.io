@@ -1,0 +1,12 @@
+@keyframes cursor {
+  to {
+      border-color: transparent;
+  }
+}
+
+.txt {
+  display: table-cell;
+  vertical-align: middle;
+  border-right: 0.05em solid #111111; 
+  animation: cursor 1s ease infinite;
+}
