@@ -29,10 +29,11 @@
         txt.innerHTML += content[n]; //.txt엘리먼트에 위에 content의 변수에 저장한 문자를 순차적으로 뿌리겠다.
         if(n < content.length) { 
             n++;
+            clearInterval(loop);
         }
     };
 
-    setInterval(typing, 100);
+    var loop = setInterval(typing, 100);
   </script>
 </body>
 </html>
