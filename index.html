@@ -7,6 +7,7 @@
   <meta name="description" content="Mingeon Ju Personal Web Page"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css">
+  <script src="https://unpkg.com/type-hangul"></script>
 </head>
 <body>
   <header>
@@ -19,10 +20,13 @@
   </header>
   <article class="snap-section y-margin">
     <div class="paragraph">
-      <span class="first_line"></span>
-      <span class="second_line"></span>
+      <!-- <span class="text"></span> -->
+      <span class="text" id="a">안녕하세요<br>주민건입니다</span>
     </div>
   </article>
-  <script type="module" src="./index.js"></script>
+  <script>
+    TypeHangul.type('#a');
+  </script>
+  <!-- <script type="module" src="./index.js"></script> -->
 </body>
 </html>
