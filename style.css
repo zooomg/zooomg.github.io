@@ -87,6 +87,7 @@ header>nav ul li:first-child a:visited, header>nav ul li:first-child a:link {
   /* font-size: 17em; */
   font-size: clamp(2rem,2rem + 6vw,140px);
   vertical-align: middle;
+  white-space: pre-line;
 }
 
 .text::after {

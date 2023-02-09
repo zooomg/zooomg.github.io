@@ -21,21 +21,9 @@
   <article class="snap-section y-margin">
     <div class="paragraph">
       <!-- <span class="text"></span> -->
-      <span class="text">안녕하세요<br>주민건입니다</span>
+      <span class="text"></span>
     </div>
   </article>
-  <script>
-    var $text = document.querySelector('.text');
-    $text.addEventListener('th.beforeType', function(e) {
-      if (e.detail.typeChar == '<br>'){
-        $text.innerHTML += '<br>'; 
-      }
-    })
-    TypeHangul.type('.text', {
-      intervalType: 100,
-      humanize: 0.5,
-    });
-  </script>
-  <!-- <script type="module" src="./index.js"></script> -->
+  <script type="module" src="./index.js"></script>
 </body>
 </html>
